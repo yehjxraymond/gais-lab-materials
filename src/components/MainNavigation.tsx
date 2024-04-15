@@ -1,11 +1,11 @@
 "use client";
 
 import { FunctionComponent } from "react";
-import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { BotMessageSquare } from "lucide-react";
+import { ApiKeySettings } from "./ApiKeySettings";
 
 export const MainNavigation: FunctionComponent = () => {
   const pathname = usePathname();
@@ -31,6 +31,7 @@ export const MainNavigation: FunctionComponent = () => {
         >
           Lessons
         </Link>
+        <ApiKeySettings />
       </nav>
     </div>
   );
