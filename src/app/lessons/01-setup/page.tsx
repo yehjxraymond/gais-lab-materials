@@ -3,8 +3,7 @@ import Markdown from "react-markdown";
 const content = `
 # Lab 1: Setting up your environment
 
-Blah blah blah
-
+TBD
 `;
 
 export default function Page() {

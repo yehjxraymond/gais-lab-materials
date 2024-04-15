@@ -24,7 +24,9 @@ export const MainNavigation: FunctionComponent = () => {
           href="/lessons"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+            pathname.startsWith("/lessons")
+              ? "text-foreground"
+              : "text-foreground/60"
           )}
         >
           Lessons
