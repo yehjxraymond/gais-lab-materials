@@ -9,7 +9,7 @@ interface ChatCompletionResponse {
 const postChatCompletion = betterAxiosError(
   async (body: { message: string; model?: string }) => {
     const { data } = await authenticatedAxios.post<ChatCompletionResponse>(
-      "/api/lessons/01-setup",
+      "/api/lessons/01-setup/llm",
       body
     );
     return data;
